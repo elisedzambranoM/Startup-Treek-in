@@ -445,4 +445,11 @@ textarea {
   padding: 0.2em 0;
 }
 
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
 /*# sourceMappingURL=style.css.map */
