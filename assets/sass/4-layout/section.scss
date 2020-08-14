@@ -1,0 +1,31 @@
+.section__intro {
+    padding: $spacing;
+}
+
+.section__features {
+    padding: $spacing;
+}
+
+.section__features--title {
+    display: flex;
+    justify-content: center;
+}
+
+.section__features--text {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section__price {
+    padding: $spacing;
+}
+
+.section__price--title {
+    display: flex;
+    justify-content: center;
+}
+
+.section__price--card {
+    display: flex;
+    justify-content: space-around
+}
