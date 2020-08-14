@@ -3,3 +3,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 480px) {
+    .footer__legal {
+        flex-direction: column;
+    }
+}

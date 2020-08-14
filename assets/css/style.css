@@ -466,8 +466,7 @@ textarea {
 }
 
 .section__features--title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .section__features--text {
@@ -480,8 +479,7 @@ textarea {
 }
 
 .section__price--title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .section__price--card {
@@ -489,10 +487,25 @@ textarea {
   justify-content: space-around;
 }
 
+@media screen and (max-width: 480px) {
+  .section__features--text {
+    flex-direction: column;
+  }
+
+  .section__price--card {
+    flex-direction: column;
+  }
+}
 .footer__legal {
   padding: 1.5%;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__legal {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
