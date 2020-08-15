@@ -8,11 +8,16 @@
             cursor: pointer;
             padding: 6px 15px;
             font-weight: bold;
+            transition: all 0.3s ease-in-out;
 
         }
 
         button:hover {
             background-color: $middle-blue;
+        }
+
+        button:focus {
+            background-color: $lavander-grey;
         }
     }
 }

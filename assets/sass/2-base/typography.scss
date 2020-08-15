@@ -35,3 +35,20 @@ body {
     font-weight: bold;
     font-size: 40px;
 }
+
+.footer__legal {
+    span {
+        ul {
+            li {
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.footer__legal--copyright {
+    color: $white;
+    align-items: center;
+}

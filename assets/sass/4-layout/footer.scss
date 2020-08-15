@@ -4,9 +4,22 @@
     justify-content: space-between;
     padding-left: 6rem;
     padding-right: 6rem;
+    background-color: $raising-black;
 
     span {
         display: flex;
+
+        ul {
+            li {
+                float: left;
+                text-decoration: none;
+                padding: 16px 16px 0px 16px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
 
