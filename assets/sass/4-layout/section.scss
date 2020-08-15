@@ -8,9 +8,11 @@ html {
     width: 30%;
     line-height: 25px;
     margin-top: 60px;
+    position: relative;
 
     span {
-        margin-top: 30px
+        margin-top: 30px;
+        position: absolute;
     }
 
     h1 {
@@ -30,12 +32,11 @@ html {
 
 .section__features {
     padding: $spacing;
-    margin-bottom: 250px;
 }
 
 .section__features--title {
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 
 .section__features--text {
@@ -47,6 +48,7 @@ html {
         width: 30%;
         line-height: 25px;
         margin: 0;
+
     }
 
     h1 {
@@ -62,7 +64,11 @@ html {
 
 .section__price {
     padding: $spacing;
-    background-color: #726f73;
+    background-image: url("../images/bg-price.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20%;
+
 }
 
 .section__price--title {
@@ -150,9 +156,6 @@ html {
 .section__price--card1:hover {
     box-shadow: 9px 10px 3px 0px $raising-black;
 }
-
-
-
 
 
 @media screen and (max-width: 480px) {
