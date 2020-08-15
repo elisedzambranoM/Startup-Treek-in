@@ -1,0 +1,37 @@
+.header__topbar {
+    .header__topbar--reg {
+        button {
+            color: $white;
+            background-color: $ball-blue;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+            padding: 6px 15px;
+            font-weight: bold;
+
+        }
+
+        button:hover {
+            background-color: $middle-blue;
+        }
+    }
+}
+
+.section__price--card {
+
+
+    div {
+
+        p {
+            button {
+                color: $white;
+                background-color: $ball-blue;
+                border: none;
+                padding: 8px 67px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+
+    }
+}

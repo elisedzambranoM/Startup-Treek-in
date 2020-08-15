@@ -2,6 +2,12 @@
     padding: $spacing;
     display: flex;
     justify-content: space-between;
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+    span {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 480px) {

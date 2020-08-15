@@ -2,4 +2,42 @@
     display: flex;
     justify-content: space-between;
     padding: $spacing;
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+    span {
+        display: flex;
+
+        ul {
+
+            li {
+                float: left;
+                text-decoration: none;
+                padding: 16px 16px 0px 16px;
+
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+
+
+    .header__topbar--reg {
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        button {
+            margin-left: 30px;
+        }
+    }
+
+
 }

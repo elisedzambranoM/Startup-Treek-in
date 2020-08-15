@@ -3,86 +3,7 @@
    License: none (public domain)
 */
 html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -445,6 +366,36 @@ textarea {
   padding: 0.2em 0;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.header__topbar span ul li a {
+  color: #8f9199;
+}
+
+.header__topbar .header__topbar--reg a {
+  color: #8f9199;
+}
+
+.section__features--title {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.section__features--text h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.section__features--text p {
+  font-size: 16px;
+}
+
+.section__price--title {
+  font-weight: bold;
+  font-size: 40px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -455,23 +406,80 @@ textarea {
   display: flex;
   justify-content: space-between;
   padding: 1.5%;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.header__topbar span {
+  display: flex;
+}
+.header__topbar span ul li {
+  float: left;
+  text-decoration: none;
+  padding: 16px 16px 0px 16px;
+}
+.header__topbar span ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.header__topbar .header__topbar--reg {
+  display: flex;
+  align-items: center;
+}
+.header__topbar .header__topbar--reg a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.header__topbar .header__topbar--reg button {
+  margin-left: 30px;
 }
 
 .section__intro {
   padding: 1.5%;
+  display: inline-block;
+  width: 30%;
+  line-height: 25px;
+  margin-top: 60px;
+}
+.section__intro span {
+  margin-top: 30px;
+}
+.section__intro h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 50px;
+  margin-left: 90px;
+}
+.section__intro p {
+  margin-left: 90px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 .section__features {
   padding: 1.5%;
+  margin-bottom: 250px;
 }
 
 .section__features--title {
   text-align: center;
+  margin-bottom: 90px;
 }
 
 .section__features--text {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.section__features--text span {
+  display: inline-block;
+  width: 30%;
+  line-height: 25px;
+  margin: 0;
+}
+.section__features--text h1 {
+  text-align: start;
+}
+.section__features--text p {
+  padding-top: 25px;
 }
 
 .section__price {
@@ -480,19 +488,60 @@ textarea {
 
 .section__price--title {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .section__price--card {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.section__price--card > div {
+  width: 260px;
+  text-align: center;
+  border: 1px solid red;
+  padding: 20px;
+  margin-left: 60px;
+}
+.section__price--card > div h1 {
+  font-weight: 100;
+  text-align: start;
+  font-size: 20px;
+}
+.section__price--card > div p {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: start;
+}
+.section__price--card > div .center {
+  font-size: 16px;
+  text-align: center;
+}
+.section__price--card > div ul {
+  margin-bottom: 100px;
+  padding: 0;
+  padding-left: 20px;
+}
+.section__price--card > div ul li {
+  list-style-type: disc;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: start;
+}
+
+.section__price--card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #c7c8cc;
 }
 
 @media screen and (max-width: 480px) {
   .section__features--text {
-    flex-direction: column;
-  }
-
-  .section__price--card {
     flex-direction: column;
   }
 }
@@ -500,12 +549,38 @@ textarea {
   padding: 1.5%;
   display: flex;
   justify-content: space-between;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.footer__legal span {
+  display: flex;
 }
 
 @media screen and (max-width: 480px) {
   .footer__legal {
     flex-direction: column;
   }
+}
+.header__topbar .header__topbar--reg button {
+  color: #fff;
+  background-color: #2ab7ca;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 15px;
+  font-weight: bold;
+}
+.header__topbar .header__topbar--reg button:hover {
+  background-color: #77d1dd;
+}
+
+.section__price--card div p button {
+  color: #fff;
+  background-color: #2ab7ca;
+  border: none;
+  padding: 8px 67px;
+  font-weight: bold;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

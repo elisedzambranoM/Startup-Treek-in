@@ -1,0 +1,37 @@
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.header__topbar span ul li a {
+    color: $spanish-gray;
+}
+
+.header__topbar {
+    .header__topbar--reg {
+        a {
+            color: $spanish-gray;
+        }
+    }
+}
+
+.section__features--title {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.section__features--text {
+    h1 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.section__price--title {
+    font-weight: bold;
+    font-size: 40px;
+}
