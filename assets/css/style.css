@@ -477,13 +477,15 @@ body {
 }
 .section__features--text h1 {
   text-align: start;
+  margin: 0;
 }
 .section__features--text p {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .section__price {
   padding: 1.5%;
+  background-color: #726f73;
 }
 
 .section__price--title {
@@ -498,7 +500,7 @@ body {
 .section__price--card > div {
   width: 260px;
   text-align: center;
-  border: 1px solid red;
+  border: 1px;
   padding: 20px;
   margin-left: 60px;
 }
@@ -532,6 +534,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #fff;
+}
+.section__price--card1 div p {
+  margin: 10px;
+}
+.section__price--card1 div div ul li {
+  line-height: 30px;
 }
 
 .divider {
