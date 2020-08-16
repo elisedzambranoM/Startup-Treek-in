@@ -583,6 +583,9 @@ html {
 .section__price--card1 div div ul li {
   line-height: 30px;
 }
+.section__price--card1 div div p button {
+  padding: 30px 100px;
+}
 
 .divider {
   width: 100%;
@@ -635,11 +638,11 @@ body .section__intro span p {
     text-align: start;
     font-size: 50px;
     line-height: 60px;
-    padding: 50px;
+    padding: 100px;
   }
   html .section__intro object,
 body .section__intro object {
-    margin-top: 250px;
+    margin-top: 400px;
   }
 
   .section__features--title {
@@ -650,19 +653,74 @@ body .section__intro object {
     flex-direction: column;
     align-items: center;
   }
+  .section__features--text span {
+    text-align: center;
+  }
   .section__features--text span img {
     max-width: 100%;
     text-align: center;
     transform: scale(2.5);
-    margin-top: 150px;
+    margin-top: 200px;
   }
   .section__features--text span {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 250px;
+    margin-top: 100px;
   }
   .section__features--text span h1 {
     font-size: 50px;
     text-align: center;
+    font-size: 80px;
+  }
+  .section__features--text span p {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: start;
+    padding-left: 170px;
+    padding-right: 150px;
+  }
+
+  .section__price--title {
+    font-size: 100px;
+  }
+
+  .section__price--card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__price--card div {
+    width: 526px;
+  }
+  .section__price--card div p button {
+    font-size: 50px;
+  }
+
+  .section__price--card1 {
+    margin-bottom: 40px;
+  }
+  .section__price--card1 div h1 {
+    font-size: 50px;
+  }
+  .section__price--card1 div p {
+    font-size: 80px;
+  }
+  .section__price--card1 div ul li {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  .section__price--card1 div div {
+    padding-bottom: 80px;
+  }
+
+  .footer__legal span {
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__legal span ul li a {
+    margin-left: 56px;
+    margin-right: 90px;
   }
 }
 .footer__legal {

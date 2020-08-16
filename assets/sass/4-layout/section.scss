@@ -144,6 +144,14 @@ html {
                 }
             }
         }
+
+        div {
+            p {
+                button {
+                    padding: 30px 100px;
+                }
+            }
+        }
     }
 }
 
@@ -208,14 +216,14 @@ html {
                     text-align: start;
                     font-size: 50px;
                     line-height: 60px;
-                    padding: 50px;
+                    padding: 100px;
 
                 }
 
             }
 
             object {
-                margin-top: 250px;
+                margin-top: 400px;
             }
         }
 
@@ -230,26 +238,103 @@ html {
         align-items: center;
 
         span {
+            text-align: center;
 
             img {
                 max-width: 100%;
                 text-align: center;
                 transform: scale(2.5);
-                margin-top: 150px;
+                margin-top: 200px;
+
             }
         }
 
         span {
-            max-width: 100%;
+            width: 100%;
             margin-bottom: 250px;
+            margin-top: 100px;
 
             h1 {
                 font-size: 50px;
                 text-align: center;
+                font-size: 80px;
+            }
 
+            p {
+                font-size: 50px;
+                line-height: 60px;
+                text-align: start;
+                padding-left: 170px;
+                padding-right: 150px
             }
 
         }
 
+    }
+
+    .section__price--title {
+        font-size: 100px;
+    }
+
+    .section__price--card {
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            width: 526px;
+
+            p {
+                button {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+    .section__price--card1 {
+        margin-bottom: 40px;
+
+        div {
+
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 80px;
+            }
+
+
+            ul {
+                li {
+                    font-size: 40px;
+                    line-height: 70px;
+                }
+            }
+
+
+            div {
+                padding-bottom: 80px;
+
+            }
+        }
+    }
+
+    .footer__legal {
+        span {
+            font-size: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                li {
+                    a {
+                        margin-left: 56px;
+                        margin-right: 90px;
+                    }
+                }
+            }
+        }
     }
 }
