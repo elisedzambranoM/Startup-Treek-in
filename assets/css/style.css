@@ -406,9 +406,31 @@ body {
 }
 
 .container {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "seccion1" "seccion2" "seccion3" "footer";
+}
+
+.header__topbar {
+  grid-area: navegacion;
+}
+
+.section__intro {
+  grid-area: seccion1;
+}
+
+.section__features {
+  grid-area: seccion2;
+}
+
+.section__price {
+  grid-area: seccion3;
+}
+
+.footer__legal {
+  grid-area: footer;
 }
 
 .header__topbar {
@@ -573,8 +595,74 @@ html {
 }
 
 @media screen and (max-width: 480px) {
+  html,
+body {
+    width: 100%;
+  }
+  html .header__topbar,
+body .header__topbar {
+    flex-direction: column;
+  }
+  html .header__topbar span img,
+body .header__topbar span img {
+    width: 100px;
+  }
+  html .header__topbar span ul li a,
+body .header__topbar span ul li a {
+    display: none;
+  }
+  html .header__topbar .header__topbar--reg a,
+body .header__topbar .header__topbar--reg a {
+    display: none;
+  }
+  html .header__topbar .header__topbar--reg button,
+body .header__topbar .header__topbar--reg button {
+    display: none;
+  }
+  html .section__intro,
+body .section__intro {
+    flex-direction: column;
+    width: 100%;
+  }
+  html .section__intro span h1,
+body .section__intro span h1 {
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+  }
+  html .section__intro span p,
+body .section__intro span p {
+    text-align: start;
+    font-size: 50px;
+    line-height: 60px;
+    padding: 50px;
+  }
+  html .section__intro object,
+body .section__intro object {
+    margin-top: 250px;
+  }
+
+  .section__features--title {
+    font-size: 100px;
+  }
+
   .section__features--text {
     flex-direction: column;
+    align-items: center;
+  }
+  .section__features--text span img {
+    max-width: 100%;
+    text-align: center;
+    transform: scale(2.5);
+    margin-top: 150px;
+  }
+  .section__features--text span {
+    max-width: 100%;
+    margin-bottom: 250px;
+  }
+  .section__features--text span h1 {
+    font-size: 50px;
+    text-align: center;
   }
 }
 .footer__legal {

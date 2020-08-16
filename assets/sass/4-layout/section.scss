@@ -159,8 +159,97 @@ html {
 
 
 @media screen and (max-width: 480px) {
-    .section__features--text {
-        flex-direction: column;
+
+    html,
+    body {
+        width: 100%;
+
+        .header__topbar {
+            flex-direction: column;
+
+            span {
+                img {
+                    width: 100px;
+                }
+
+                ul {
+                    li {
+                        a {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .header__topbar--reg {
+                a {
+                    display: none;
+                }
+
+                button {
+                    display: none;
+                }
+            }
+
+        }
+
+        .section__intro {
+            flex-direction: column;
+            width: 100%;
+
+            span {
+                h1 {
+                    font-size: 100px;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                p {
+                    text-align: start;
+                    font-size: 50px;
+                    line-height: 60px;
+                    padding: 50px;
+
+                }
+
+            }
+
+            object {
+                margin-top: 250px;
+            }
+        }
+
     }
 
+    .section__features--title {
+        font-size: 100px;
+    }
+
+    .section__features--text {
+        flex-direction: column;
+        align-items: center;
+
+        span {
+
+            img {
+                max-width: 100%;
+                text-align: center;
+                transform: scale(2.5);
+                margin-top: 150px;
+            }
+        }
+
+        span {
+            max-width: 100%;
+            margin-bottom: 250px;
+
+            h1 {
+                font-size: 50px;
+                text-align: center;
+
+            }
+
+        }
+
+    }
 }

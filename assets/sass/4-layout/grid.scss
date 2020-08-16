@@ -1,5 +1,31 @@
 .container {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "navegacion"
+        "seccion1"
+        "seccion2"
+        "seccion3"
+        "footer";
+}
+
+.header__topbar {
+    grid-area: navegacion;
+}
+
+.section__intro {
+    grid-area: seccion1;
+}
+
+.section__features {
+    grid-area: seccion2;
+}
+
+.section__price {
+    grid-area: seccion3;
+}
+
+.footer__legal {
+    grid-area: footer;
 }
